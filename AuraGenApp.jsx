@@ -105,7 +105,7 @@ export default function AuraGenApp() {
           <h3>Current Workspace State</h3>
           <p>
             Cognitive Threshold Level:{' '}
-            <strong>{telemetry.score >= 80 ? 'High Load (Focused Mode)' : 'Normal Operations'}</strong>
+            <strong>{telemetry.isOverloaded ? 'High Load (Focused Mode)' : 'Normal Operations'}</strong>
           </p>
           <GeneratedPanel 
             isOverloaded={telemetry.isOverloaded} 

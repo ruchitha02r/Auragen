@@ -74,9 +74,9 @@ export default function GeneratedPanel({ isOverloaded, fieldName = "email", orig
           cognitive_load_score: isOverloaded ? SCORE_OVERLOADED : SCORE_NORMAL,
           field_name: fieldName,
           signal_summary: isOverloaded
-            ? 'high cognitive load on ${fieldName}, long hesitation'
-            : 'normal activity on ${fieldName}',
-          original_field_type: originalfieldType,
+            ? `high cognitive load on ${fieldName}, long hesitation`
+            : `normal activity on ${fieldName}`,
+          original_field_type: originalFieldType,
         }),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
